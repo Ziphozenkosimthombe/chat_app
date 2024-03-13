@@ -1,3 +1,5 @@
+import { GenderCheckBox } from "./GenderCheckBox";
+
 const SignUp = () => {
     return (
         <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
@@ -14,7 +16,7 @@ const SignUp = () => {
                         </label>
                         <input 
                             type="text"
-                            placeholder="Enter FullName"
+                            placeholder="Bob June"
                             className="w-full input input-bordered h-10 bg-gray-600 text-white"
                         />
                     </div>
@@ -26,7 +28,7 @@ const SignUp = () => {
                         </label>
                         <input 
                             type="text"
-                            placeholder="Enter username"
+                            placeholder="Bobbin"
                             className="w-full input input-bordered h-10 bg-gray-600 text-white"
                         />
                     </div>
@@ -52,6 +54,14 @@ const SignUp = () => {
                             placeholder="Confirm password"
                             className="w-full input input-bordered h-10 bg-gray-600 text-white"
                         />
+                    </div>
+                    <GenderCheckBox />
+
+                    <a href="#" className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block text-white">
+                        Already have an account?
+                    </a>
+                    <div>
+                        <button className="btn btn-block mt-2 btn-sm bg-gray-600 text-white">Sign Up</button>
                     </div>
                 </form>
             </div>   
