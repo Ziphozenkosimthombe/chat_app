@@ -19,14 +19,16 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         enum:["male", "female"],
-
     },
     profilePic:{
         type: String,
         default: "",
     },
-});
+    // createdAt, updatedAt
+},
+{timestamps: true}
+);
 
-const USer = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema); // Corrected model name
 
-export default USer;
+export default User;
