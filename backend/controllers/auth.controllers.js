@@ -73,7 +73,6 @@ export const login = async (req, res) => {
             username: user.username,
             profilePic: user.profilePic,
         })
-t
     }catch(error){
         console.log(`Error in the login controller, ${error.message}`);
         res.status(500).json({error: "Server Error"});
